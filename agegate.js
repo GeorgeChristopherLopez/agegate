@@ -147,19 +147,20 @@ function rememberMeCheck() {
 
     let wantsACookie = document.getElementById('rememberMe').checked;
     if (wantsACookie) {
-        document.cookie = 'verified';
+        document.cookie =
+            'cookie1=test; expires=Fri, 03 Jul 2020 20:47:11 UTC; path=/';
         console.log('wants a cookie YUM');
     } else {
         console.log('no cookies for meee');
     }
 }
 
-
+alert('working')
 
 
 /* CHECKS FOR COOKIES ON SITE LOAD */
 function cookieCheck() {
-    console.log('checkin cookies YUM');
+    console.log(document.cookie);
     if (document.cookie === 'verified') {
         successChecker(true);
         console.log('21!!!!!!!!!!!!')
