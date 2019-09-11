@@ -1,0 +1,131 @@
+/*GLOBAL */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+h3 {
+    font-family: 'Montserrat', sans-serif;
+}
+
+p {
+    font-family: 'Lato', sans-serif;
+}
+
+.container {
+    width: 80%;
+    margin: 1rem auto;
+}
+.backdrop {
+    background: rgba(0,0,0,0.9);
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: -10;
+}
+
+
+
+
+
+
+
+.ageGate {
+    width: 70%;
+    padding: 2rem;
+    position: absolute;
+    top: 15%;
+    left: 15%;
+ 
+    z-index: 1;
+    text-align: center;
+    color: white;
+}
+
+
+/* MESSAGE */
+
+
+#title {
+    font-size: 3rem;
+}
+
+#subtitle {
+    font-size: 2rem;
+}
+
+
+/*USER INTERFACE */
+
+
+input.date {
+    border: none;
+    width: 5REM;
+    height: 2.5rem;
+    font-size: 1.4rem;
+    text-align: center;
+    background: #FFFFFF;
+    color: rgba(0,154,102, 1);
+}
+
+
+
+
+    input.date.Error {
+        border: none;
+        width: 5REM;
+        height: 2.5rem;
+        font-size: 1.4rem;
+        text-align: center;
+        background: red;
+        color: black;
+    }
+
+button.Go {
+    background: #009A66;
+    font-weight: bold;
+}
+
+input.date::selection {
+    background: transparent; 
+}
+
+
+
+img{
+    transform: scale(.8);
+    margin: 0;
+    padding: 0;
+}
+
+.btn {
+    margin-top: 1rem;
+
+    border: none;
+    width: 5REM;
+    height: 2.5rem;
+    font-size: 1.4rem;
+    text-align: center;
+    background: rgba(0,0,0,1);
+    color: white;
+    cursor: pointer;
+}
+/*FOOTER*/
+.cookie-modal {
+    width: 60%;
+    padding: 2rem;
+    position: absolute;
+    bottom: 0;
+    left: 20%;
+    z-index: 1;
+    text-align: center;
+    margin: 0rem auto;
+    color: #fff;
+}

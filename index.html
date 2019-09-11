@@ -1,0 +1,74 @@
+﻿<!DOCTYPE HTML>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE-edge">
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="./all.css" />
+    <link href="https://fonts.googleapis.com/css?family=Lato:100|Montserrat&display=swap" rel="stylesheet">
+    <title>Age Gate</title>
+</head>
+<body>
+    <!----------------START OF BACKDROP-->
+    <div class="backdrop"></div>
+
+
+    <!---START OF AGE GATE CONTAINER -->
+    <div class="ageGate-container">
+          <div class="ageGate">
+
+              <!---MESSAGE-->
+            <div id="message">
+                <h3 id="title">ID Please.</h3>
+                <p id="subtitle">NEED TO KNOW IF YOUR OLD ENOUGH.</p>
+            </div>
+
+              <!---LOGO-->
+            <img src="https://bbrew-stage.s3.amazonaws.com/assets/Footer-Logo-0a98ed2fe0069e0f1c98d0164459a72e.svg">
+
+              <!---USER INTERFACE OR FORM-->
+            <form>
+                <p>Please Enter Your Date Of Birth To Continue</p>
+                <div class="container">
+                    <input type="text" id="month" class="date" maxlength="2" onclick="this.focus();this.select()" onkeypress="javascript:return isNumber(event)">
+                    <input type="text" id="day" class="date" maxlength="2" onclick="this.focus();this.select()" onkeypress="javascript:return isNumber(event)">
+                    <input type="text" id="year" class="date" maxlength="4" onclick="this.focus();this.select()" onkeypress="javascript:return isNumber(event)">
+                    <button id="enter" class="btn" onclick="ageVerification()">ENTER</button>
+                </div>
+
+                <div>
+                    <input id="rememberMe" type="checkbox" />
+                    <label for="rememberMe">Remember me on this device</label>
+                </div>
+
+               
+
+            </form>
+              <!---END OF USER INTERFACE-->
+        </div>
+        <!----END OF AGE GATE CONTAINER-->
+
+
+        <!----TOP OF COOKIE MODAL-->
+        <div class="cookie-modal">
+            <p><i class="fas fa-cookie-bite"></i>Cookie Information</p>
+            <p>By Clicking 'Enter', You agree to our cookie policy</p>
+        </div>
+        <!---END OF COOKIE MODAL-->
+
+    </div>
+
+<!---END OF BACK DROP-->
+
+
+
+
+
+
+    <script src="./agegate.js"></script>
+
+
+</body>
+
+</html>
