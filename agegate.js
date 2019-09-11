@@ -1,6 +1,6 @@
 /*REQUIRED AGE*/
 const requiredAge = 21;
-let verified = false;
+let verified = '';
 
 
 /*todays date*/
@@ -67,16 +67,15 @@ function ageVerification() {
 /* UPDATES MESSAGE UI if age verified */
 function successChecker(event) {
     if (event) {
-        //  
+        verified = true;
         rememberMeCheck();
-        console.log('21!!!!!!!!!!!!')
         document.getElementById('title').innerHTML = 'WELCOME TO BROOKLYN';
         document.getElementById('subtitle').innerHTML = "Congrats, you're old enough";
         setTimeout(function () { location.replace("https://brooklynbrewery.com/about/about-the-brewery") }, 5000);
 
     } else {
-      //  location.replace("https://www.chuckecheese.com")
-        console.log('NOPE!!!!!!')
+        verified = false;
+   
         document.getElementById('title').innerHTML = 'SORRRY';
         document.getElementById('subtitle').innerHTML = "TRY AGAIN WHEN YOUR " + requiredAge;
         setTimeout(function () { location.replace("https://www.chuckecheese.com") }, 5000);
@@ -146,12 +145,13 @@ function InputUIHandler() {
 function rememberMeCheck() {
 
     let wantsACookie = document.getElementById('rememberMe').checked;
-    if (wantsACookie) {
+    if (wantsACookie && verified) {
         document.cookie =
-            'cookie1=verified; expires=Fri, 03 Jul 2020 20:47:11 UTC; path=/';
+            'verified';
         console.log('wants a cookie YUM');
-    } else {
-        console.log('no cookies for meee');
+    } else if (wantsACookie && !verified) {
+        document.cookie =
+            'notVerified';
     }
 }
 
@@ -161,10 +161,11 @@ function rememberMeCheck() {
 /* CHECKS FOR COOKIES ON SITE LOAD */
 function cookieCheck() {
     console.log(document.cookie);
-    if (document.cookie === 'cookie1=verified; expires=Fri, 03 Jul 2020 20:47:11 UTC; path=/') {
+    if (document.cookie === 'verified') {
         successChecker(true);
         console.log('21!!!!!!!!!!!!')
-    } else {
+    } else if(document.cookie === 'notVerified'){
+        successChecker(false);
         console.log('no cookies found')
     }
 }
