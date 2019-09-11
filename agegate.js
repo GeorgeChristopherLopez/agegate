@@ -1,6 +1,6 @@
 /*REQUIRED AGE*/
 const requiredAge = 21;
-let verified = '';
+let verified;
 
 
 /*todays date*/
