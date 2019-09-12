@@ -140,6 +140,15 @@ img{
     margin-right: .4rem;
 }
 
+a{
+    text-decoration: none;
+    color: #fff;
+}
+
+a:hover{
+    text-decoration: underline;
+}
+
 
 /*MEDIA QUERIES */
 
@@ -154,14 +163,8 @@ img{
     .cookie-modal {
         width: 90%;
         left: 5%;
-        font-size: 12px;
     }
 
-    .fa-cookie-bite {
-        color: rgb(188,136,58);
-        font-size: 12px;
-        margin-right: .4rem;
-    }
 }
 
 
@@ -169,6 +172,9 @@ img{
     .ageGate {
         top: 15%;
     }
+
+
+   
 }
 
 
