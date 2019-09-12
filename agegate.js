@@ -71,14 +71,14 @@ function successChecker(event) {
         rememberMeCheck();
         document.getElementById('title').innerHTML = 'WELCOME TO BROOKLYN';
         document.getElementById('subtitle').innerHTML = "Congrats, you're old enough";
-        setTimeout(function () { location.replace("https://brooklynbrewery.com/about/about-the-brewery") }, 5000);
+        setTimeout(function () { location.replace("https://brooklynbrewery.com/about/about-the-brewery") }, 3000);
 
     } else {
         verified = false;
         rememberMeCheck();
         document.getElementById('title').innerHTML = 'SORRRY';
         document.getElementById('subtitle').innerHTML = "TRY AGAIN WHEN YOUR " + requiredAge;
-        setTimeout(function () { location.replace("https://www.chuckecheese.com") }, 5000);
+        setTimeout(function () { location.replace("https://www.chuckecheese.com") }, 3000);
     }
 
 }
