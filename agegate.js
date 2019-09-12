@@ -59,7 +59,7 @@ function ageVerification() {
         successChecker(query);
        
     } else {
-        alert('ERROR');
+        alert('Please Enter Your Date Of Birth To Continue');
     }
 
 }
@@ -100,6 +100,7 @@ function InputUIHandler() {
     let dayValue = parseFloat(day.value);
     let yearValue = parseFloat(year.value);
 
+        /*UPDATES MONTH DAY YEAR INPUT UI*/
     if (monthValue > 0 && monthValue <= 12) {
         console.log('GOOD monthValue of ' + monthValue);
         month.classList.remove('Error');
@@ -123,7 +124,7 @@ function InputUIHandler() {
 
     }
 
-
+    /*UPDATE ENTER BTN UI*/
     if (monthValue <= 12
         && monthValue > 0
         && dayValue <= 31
