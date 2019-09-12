@@ -75,7 +75,7 @@ function successChecker(event) {
 
     } else {
         verified = false;
-   
+        rememberMeCheck();
         document.getElementById('title').innerHTML = 'SORRRY';
         document.getElementById('subtitle').innerHTML = "TRY AGAIN WHEN YOUR " + requiredAge;
         setTimeout(function () { location.replace("https://www.chuckecheese.com") }, 5000);
