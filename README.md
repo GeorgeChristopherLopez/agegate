@@ -1,12 +1,11 @@
-<h1>Age Gate</h1>
+#Age Gate
 <br>
-<h1>Launch</h1>
-<br>
-Download zip or open in desktop (via github).
+#Launch
+View Live Demo at https://georgechristopherlopez.github.io/agegate/<br>
+-Download zip or open in desktop (via github)
+-Click <code>index.html</code> to view
 
-Click <code>index.html</code> to view.
-
-<h1>Features</h1> 
+#Features 
 
 • Month / Date / Year Birthday Selector as Inputs
 
