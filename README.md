@@ -4,7 +4,7 @@
 <br>
 Download zip or open in desktop (via github).
 
-Click <code>agegate.html</code> to view.
+Click <code>index.html</code> to view.
 
 <h1>Features</h1> 
 
