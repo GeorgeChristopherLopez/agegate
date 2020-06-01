@@ -22,11 +22,3 @@ a successful user to return to the page
 and bypass the age gate; implemented using document.cookie.
 
 
-<br>
-• Upgrade the selector to include MONTH /
-Day / Year by using INPUTs
-
-• Build this plugin to allow the code to be
-adjusted to easily account for any age
-requirement using const requiredAge variable.
-
