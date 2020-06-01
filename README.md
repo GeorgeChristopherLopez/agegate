@@ -21,7 +21,7 @@ error message. (also redirects to age appropriate website);
 a successful user to return to the page
 and bypass the age gate; implemented using document.cookie.
 
-Bonus:
+
 <br>
 • Upgrade the selector to include MONTH /
 Day / Year by using INPUTs
