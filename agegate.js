@@ -69,9 +69,9 @@ function successChecker(event) {
     if (event) {
         verified = true;
         rememberMeCheck();
-        document.getElementById('title').innerHTML = 'WELCOME TO BROOKLYN';
+        document.getElementById('title').innerHTML = 'WELCOME TO BEERTOWN';
         document.getElementById('subtitle').innerHTML = "Congrats, you're old enough";
-        setTimeout(function () { location.replace("https://brooklynbrewery.com/about/about-the-brewery") }, 1500);
+        setTimeout(function () { location.replace("https://en.wikipedia.org/wiki/Beer") }, 1500);
 
     } else {
         verified = false;

@@ -75,7 +75,7 @@ input.date {
     font-size: 1.4rem;
     text-align: center;
     background: #FFFFFF;
-    color: rgba(0,154,102, 1);
+    color: #ffc107;
 }
 
 
@@ -92,7 +92,7 @@ input.date {
     }
 
 button.Go {
-    background: #009A66;
+    background: #ffc107;
     font-weight: bold;
 }
 
